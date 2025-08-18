@@ -25,7 +25,7 @@ public class Medicamento {
     //Atributos - Constructor
     public Medicamento(){}
 
-    public Medicamento(String code, String name, String tipoMedicamento, int stock, Date fechaCaducidad) {
+    public Medicamento(String code, String name, String tipoMedicamento, int stock, String fechaCaducidad) {
         this.code = code;
         this.name = name;
         this.tipoMedicamento = tipoMedicamento;
@@ -87,7 +87,17 @@ public class Medicamento {
         this.fechaCaducidad = fechaCaducidad;
     }
 
+    
+    //To String para convertir todos los datos en "palabras " que se puedan leer luego en consola al ejecutar 
+    
+    @Override
+    public String toString() {
+        return "Medicamento{" + "code=" + code + ", name=" + name + ", tipoMedicamento=" + tipoMedicamento + ", stock=" + stock + ", fechaCaducidad=" + fechaCaducidad + '}';
+    }
+
  
+    
+    
     
 }
   
