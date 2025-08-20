@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.java.farmaciacomunitaria;
 
 import java.util.Date;
@@ -18,7 +15,7 @@ public class Medicamento {
     private int stock;
    
    
-    private Date fechaCaducidad;
+    private String fechaCaducidad;
     
     
  
@@ -79,11 +76,11 @@ public class Medicamento {
         this.stock = stock;
     }
 
-    public Date getFechaCaducidad() {
+    public String getFechaCaducidad() {
         return fechaCaducidad;
     }
 
-    public void setFechaCaducidad(Date fechaCaducidad) {
+    public void setFechaCaducidad(String fechaCaducidad) {
         this.fechaCaducidad = fechaCaducidad;
     }
 
